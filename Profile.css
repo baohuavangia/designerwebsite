@@ -1,0 +1,584 @@
+/* THEM FONTS CHU */
+@font-face {
+    font-family: JetBrainsMono-Bold;
+    src: url(FONTS/UTM\ Avo.ttf);
+}
+@font-face {
+    font-family: Philosopher-Bold;
+    src: url(FONTS/Philosopher-Bold.ttf);
+}
+@font-face {
+    font-family: Philosopher-Regular;
+    src: url(FONTS/Philosopher-Regular.ttf);
+}
+@font-face {
+    font-family: Philosopher-Italic;
+    src: url(FONTS/Philosopher-Italic.ttf);
+}
+@font-face {
+    font-family: SourceSerifPro-Black;
+    src: url(FONTS/SourceSerifPro-Black.ttf);
+}
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url(FONTS/SourceSansPro-Bold.ttf);
+}
+@font-face {
+    font-family: SourceSansPro-ExtraLight;
+    src: url(FONTS/SourceSansPro-ExtraLight.ttf);
+}
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(FONTS/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: SourceSansPro-BlackItalic;
+    src: url(FONTS/SourceSansPro-BlackItalic.ttf);
+}
+@font-face {
+    font-family: DancingScript-Regular;
+    src: url(FONTS/DancingScript-Regular.ttf);
+}
+/* Custom Scroll */
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-image:linear-gradient(to top, #27a4f2, #eabe0e) ;
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+
+/* Muot ma */
+html{
+    scroll-behavior: smooth;
+}
+
+/* PHAN BODY */
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    background-color: #E6E6E6;
+}
+
+/* PHAN MENU */
+header{
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 0.4rem;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+header #FATHER{
+    width: 92rem;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    transition: all 0.5s;
+}
+
+
+header #img-logo img{
+    /* background-image: url(/IMAGES/Logo-DW-Small.png); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 4rem;
+
+}
+header #menu-1 ul{
+    display: flex;
+}
+header #menu-1 ul li{
+    padding: 0px 2.5em;
+    font-family: JetBrainsMono-Bold;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.884);
+}
+header #icon-pinion{
+    cursor: pointer;
+    transition: all .3s;
+}
+header #icon-pinion:hover{
+    color: red;
+}
+header #menu-1 ul li a:hover{
+    color: #27a4f2;
+}
+header #menu-1 ul li a:focus{
+    color: #27a4f2;
+}
+
+/* KHI CHUA SCROLL */
+header #menu-1 ul li a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 0.7em 0;
+    transition: all 0.3s;
+}
+header #menu-1 ul li a::after{
+    content: "";
+    height: 0.4em;
+    width: 0;
+    background-color: #eabe0e;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s ease-in-out;
+}
+header #menu-1 ul li a:hover::after{
+    width: 100%;
+}
+header #menu-1 ul li a:focus::after{
+    width: 100%;
+}
+
+/* KHI SCROLL header */
+header.sticky{
+    background-color: white;
+    opacity: 0.8;
+    transition: all 0.8s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 0.25rem;
+}
+
+header.sticky #menu-1 ul li a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 0.7em 0;
+    transition: all 0.3s;
+}
+header.sticky #menu-1 ul li a::after{
+    content: "";
+    height: 0.4em;
+    width: 0;
+    background-color: #eabe0e;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+}
+header.sticky #menu-1 ul li a:hover::after{
+    width: 100%;
+}
+header.sticky #menu-1 ul li a:focus::after{
+    width: 100%;
+}
+header.sticky #menu-1 ul li a:hover{
+    color: #27a4f2;
+}
+header.sticky #menu-1 ul li a:focus{
+    color: #27a4f2;
+}
+
+/* Nội Dung 01 */
+#father{
+    background-color: white;
+    width: 92rem;
+    margin: 0 auto;
+    /* padding: 0.4rem; */
+}
+/* Khoi div 01 */
+#father #sect-01{
+    display: flex;
+}
+#father #sect-01 #div-01{
+    width: 50%;
+    text-align: center;
+    padding: 15em 0;
+}
+#father #sect-01 #div-01 #text-01{
+    font-family: Philosopher-Bold;
+    font-size: 7vh;
+}
+#father #sect-01 #div-01 #text-02{
+    font-family: Philosopher-Bold;
+    font-size: 3vh;
+    text-shadow: 0px 0px 5px;
+    margin-top: 0.5em;
+}
+#father #sect-01 #div-01 img{
+    margin-top: 1em;
+    width: 30rem;
+}
+
+/* Khoi div 02 */
+#father #sect-01 #div-01-1{
+    width: 50%;
+    padding: 3em 0 0 0;
+}
+#father #sect-01 #div-01-1 #img-01 img{
+    width: 40em;
+}
+
+/* Nội Dung 2 */
+#father #sect-02{
+    width: 100%;
+    height: 45rem;
+    position: relative;
+    z-index: 1;
+    background-color: #E6E6E6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+#father #sect-02 #div-02{
+    background-image: url(IMAGES/Kiên01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45rem;
+    object-fit: cover;
+    text-align:  center;
+    background-color: red;
+}
+#father #sect-02:hover #div-02{
+    filter: blur(4px);
+    
+}
+#father #sect-02:hover #div-02-1{
+    display: block;
+}
+#father #sect-02 #div-02-1{
+    text-align:  center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#father #sect-02 #div-02-1 img{
+    margin-top: 10em;
+    width: 15em;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#father #sect-02 #div-02-1 #text-03{
+    padding: 0 20rem;
+    font-family: Philosopher-Regular;
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: rgb(212, 211, 211);
+    text-shadow: 0px 0px 5px black;
+}
+#father #sect-02 #div-02-1 #text-03-2{
+    padding: 0 20rem;
+    font-family: SourceSerifPro-Black;
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: rgb(212, 211, 211);
+    text-shadow: 0px 0px 5px black;
+}
+#father #sect-02 #div-02-1 #text-03-3{
+    padding: 0 20rem;
+    font-family: Philosopher-Regular;
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin: 10px;
+    color: rgb(212, 211, 211);
+    text-shadow: 0px 0px 5px black;
+}
+/* SourceSansPro-Bold */
+#father #sect-02 #div-02-1 a{
+    font-family: SourceSansPro-Bold;
+    text-decoration: none;
+    color: rgb(212, 211, 211);
+    text-shadow: 0px 0px 5px black;
+    font-size: 2vh;
+    transition: all 0.3s;
+}
+#father #sect-02 #div-02-1 a:hover{
+    text-decoration: underline;
+}
+#father #sect-02 #div-02-1 a i{
+    font-size: 1.5vh;
+}
+#father #sect-02 #div-02-1 a:hover i{
+    transition: all 0.3s;
+    transform: translate(4px, 0);
+}
+
+/* Nội dung 03 */
+#sect-03 h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 4.5vh;
+    font-family: SourceSansPro-Regular;
+}
+#sect-03{
+    margin-bottom: 20px;
+}
+#sect-03 #div-03{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sect-03 #div-03 #div-03-1{
+    background-image: url(IMAGES/Kiên02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 23em;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+#sect-03 #div-03 #div-03-1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #27a4f2;
+}
+#sect-03 #div-03 #div-03-2{
+    background-image: url(IMAGES/Kiên02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 23em;
+    text-align: left;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+#sect-03 #div-03 #div-03-2:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #27a4f2;
+}
+#sect-03 #div-03 #div-03-3{
+    background-image: url(IMAGES/Kiên02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 23em;
+    text-align: left;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+#sect-03 #div-03 #div-03-3:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #27a4f2;
+}
+#sect-03 #div-03 #div-03-4{
+    background-image: url(IMAGES/Kiên02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.6s;
+    height: 23em;
+}
+#sect-03 #div-03 #div-03-4:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #27a4f2;
+}
+#sect-03 #div-03 #div-03-5{
+    background-image: url(IMAGES/Kiên02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.6s;
+    height: 23em;
+}
+#sect-03 #div-03 #div-03-5:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #27a4f2;
+}
+#sect-03 #div-03 #div-03-1, #div-03-2, #div-03-3, #div-03-4, #div-03-5{
+    width: calc(20% - 5px);
+}
+
+#sect-03 #div-03 .name{
+    color: #eabe0e;
+    font-family: SourceSansPro-Bold;
+    margin-top: 17em;
+}
+#sect-03 #div-03 .work{
+    color: #eabe0e;
+    font-family: SourceSansPro-ExtraLight;
+}
+
+/* Nội dung 04 */
+#sect-04 #div-04{
+    background-color: #FFF5EC;
+    padding: 20px;
+}
+#sect-04 #div-04 #div-04-1{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+}
+
+#sect-04 #div-04 #div-04-1 #img-form{
+    width: 50%;
+}
+#sect-04 #div-04 #div-04-1 #img-form img{
+    width: 100%;
+}
+
+#sect-04 #div-04 #div-04-1 #my-form{
+    width: 50%;
+    /* background-color: red; */
+}
+#sect-04 #div-04 #div-04-1 #my-form #my-form-02{
+    /* background-color: yellow; */
+    width: 38em;
+    margin: 0 auto;
+    /* margin-top: 6em; */
+}
+#sect-04 #div-04 #div-04-1 #my-form #my-form-02 h1{
+    color: #27a4f2;
+    font-family: DancingScript-Regular;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0px 0px 5px;
+    font-size: 10vh;
+}
+#sect-04 #div-04 #div-04-1 #my-form #my-form-02 p{
+    color: #27a4f2;
+    font-family: DancingScript-Regular;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 5vh;
+}
+#sect-04 #div-04 #div-04-1 #my-form #my-form-02 #img-1-1 img{
+    width: 100%;
+}
+
+
+.formbox h2{
+    font-size: 18px;
+    font-family: Philosopher-Bold;
+}
+
+.form1{
+    
+    display: flex;
+}
+.form-box1{
+    padding: 0em 5em 0em 0em;
+}
+.form-box1 input{
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid #1A1A1A;
+    font-family: SourceSansPro-BlackItalic;
+    margin-top: 10px;
+    text-align: left;
+    width: 20em;
+}
+.form-box3{
+    padding: 3em 0em 0em 0em ;
+}
+.form-box3 input{
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: SourceSansPro-BlackItalic;
+    border-bottom: 1px solid #1A1A1A;
+
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+.form-box4{
+    padding: 3em 0em 0em 0em;
+}
+
+.form-box4 input{
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: SourceSansPro-BlackItalic;
+    border-bottom: 1px solid #1A1A1A;
+
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.but{
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #27a4f2;
+    color: white;
+    font-size: 20px;
+    font-family: Philosopher-Regular;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+/* FACEBOOK */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+.fa:hover {
+    filter: brightness(100%);
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+/* Youtube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+/* IG */
+.fa-instagram {
+    background: #125688;
+    color: white;
+    background-image:linear-gradient(to left, #7739FC, #D501C5, #FE0569, #FF7900, #FCD500)
+}
+/* Linkedin */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 5em;
+    align-items: center;
+}
+footer #end-1{
+    display: flex;
+}
+footer #email p{
+    font-weight: bolder;
+    font-size: 3vh;
+}
